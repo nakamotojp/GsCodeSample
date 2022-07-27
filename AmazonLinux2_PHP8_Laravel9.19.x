@@ -138,6 +138,7 @@ php artisan serve --port=8080
 # ＜重要＞ AWS EC2環境では必須追記！！ → MAMP/XAMPPの場合は無視！
 # /app/Providers/ AppServiceProvider.php ファイルを修正
 #--------------------------------------------
+// 9追記
 use Illuminate\Support\Facades\URL;    //この行を追加
 public function boot() {
    URL::forceScheme('https');          //この行を追加
